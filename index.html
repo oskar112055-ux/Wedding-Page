@@ -37,10 +37,11 @@ body{
 }
 
 .hero{
+    position:relative;
     min-height:100vh;
     background:
     linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
-    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    url('https://traveltalks.esky.pl/wp-content/uploads/2024/05/Katania-Sycylia-©-Shutterstock.jpg');
     background-size:cover;
     background-position:center;
     display:flex;
@@ -159,7 +160,45 @@ footer{
 .lemon{
     font-size:2rem;
 }
+.floating{
+    position:absolute;
+    font-size:3rem;
+    opacity:.7;
+    animation:float 8s ease-in-out infinite;
+    z-index:2;
+}
 
+.lemon1{
+    left:8%;
+    top:20%;
+}
+
+.lemon2{
+    right:12%;
+    top:25%;
+    animation-delay:2s;
+}
+
+.lemon3{
+    left:15%;
+    bottom:20%;
+    animation-delay:4s;
+}
+
+.lemon4{
+    right:10%;
+    bottom:15%;
+    animation-delay:6s;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
 </style>
 </head>
 
