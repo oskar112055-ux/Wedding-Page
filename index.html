@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Żaklin & Oskar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --olive:#596440;
+    --cream:#fffaf1;
+    --gold:#d7a94f;
+    --text:#40372d;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--cream);
+    color:var(--text);
+    font-family:'Cormorant Garamond',serif;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:6rem;
+    font-weight:400;
+}
+
+.subtitle{
+    font-family:'Great Vibes',cursive;
+    font-size:3rem;
+    color:#ffe08a;
+    margin:20px 0;
+}
+
+.date{
+    font-size:2rem;
+    letter-spacing:4px;
+}
+
+.countdown{
+    margin-top:50px;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.box{
+    background:rgba(255,255,255,.92);
+    color:var(--olive);
+    width:140px;
+    padding:20px;
+    border-radius:18px;
+}
+
+.box span{
+    font-size:3rem;
+    display:block;
+}
+
+section{
+    padding:100px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:var(--olive);
+    font-size:3rem;
+    margin-bottom:40px;
+}
+
+.story{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    font-size:1.5rem;
+    line-height:1.7;
+}
+
+.details-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--olive);
+    margin-bottom:15px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+footer{
+    background:var(--olive);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.lemon{
+    font-size:2rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+<div class="hero-content">
+
+<div class="lemon">🍋 ☀️ 🍋</div>
+
+<h1>Żaklin & Oskar</h1>
+
+<div class="subtitle">
+La Dolce Vita
+</div>
+
+<p class="date">09 CZERWCA 2028</p>
+
+<div class="countdown">
+
+<div class="box">
+<span id="days">0</span>
+dni
+</div>
+
+<div class="box">
+<span id="hours">0</span>
+godz.
+</div>
+
+<div class="box">
+<span id="minutes">0</span>
+min.
+</div>
+
+<div class="box">
+<span id="seconds">0</span>
+sek.
+</div>
+
+</div>
+
+</div>
+</header>
+
+<section>
+<div class="container">
+
+<h2>Witamy</h2>
+
+<div class="story">
+Z ogromną radością zapraszamy Was do wspólnego świętowania
+najpiękniejszego dnia naszego życia.
+
+Spotkajmy się w otoczeniu miłości, rodziny i przyjaciół,
+aby wspólnie rozpocząć naszą nową drogę.
+</div>
+
+</div>
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Szczegóły</h2>
+
+<div class="details-grid">
+
+<div class="card">
+<h3>📅 Data</h3>
+<p>9 czerwca 2028</p>
+</div>
+
+<div class="card">
+<h3>📍 Miejsce</h3>
+<p>
+Kalinówka - Sala Weselna<br>
+ul. Potokowa 15F<br>
+Gdańsk
+</p>
+</div>
+
+<div class="card">
+<h3>🎁 Prezenty</h3>
+<p>
+Największym prezentem będzie
+Wasza obecność.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Galeria</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed">
+
+<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf">
+
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc">
+
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Dojazd</h2>
+
+<div style="border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.15);">
+
+<iframe
+src="https://maps.google.com/maps?q=Kalinówka%20Sala%20Weselna%20Gdańsk&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="500"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="color:white;">
+Żaklin & Oskar
+</h2>
+
+<p>
+Do zobaczenia 09.06.2028 ❤️
+</p>
+
+</footer>
+
+<script>
+
+const weddingDate = new Date("June 9, 2028 00:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+const distance = weddingDate - now;
+
+document.getElementById("days").innerHTML =
+Math.floor(distance / (1000*60*60*24));
+
+document.getElementById("hours").innerHTML =
+Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance%(1000*60*60))/(1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance%(1000*60))/1000);
+
+},1000);
+
+</script>
+
+</body>
+</html>
